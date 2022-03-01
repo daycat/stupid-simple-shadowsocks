@@ -63,6 +63,7 @@ install_shadowsocks(){
     log INFO "Generating Password..."
     sspasswd=`openssl rand -base64 24`
     log INFO "Writing Config..."
+    touch /var/snap/shadowsocks-libev/common/etc/shadowsocks-libev/config.json
     cat > /var/snap/shadowsocks-libev/common/etc/shadowsocks-libev/config.json <<-EOF
     {
     "server":["::0","0.0.0.0"],
