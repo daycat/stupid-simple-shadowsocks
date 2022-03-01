@@ -4,7 +4,7 @@ A script to intall shadowsocks on ipv6 only vps (ie Hax.co.id)
 # usage:
 
 ```sh
-bash <(curl -fsSL https://cdn.n101.workers.dev/https://github.com/daycat/hax-shadowsocks-install/blob/main/main.sh)
+apt update && apt install curl -y && bash <(curl -fsSL https://cdn.n101.workers.dev/https://github.com/daycat/hax-shadowsocks-install/blob/main/main.sh)
 ```
 
 # credits
