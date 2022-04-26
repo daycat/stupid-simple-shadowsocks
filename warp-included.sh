@@ -40,6 +40,12 @@ get_local_address(){
     log INFO "Installing cURL..."
     apt install curl -y &> /dev/null
     local_ip_address=`curl ip.sb`
+    install_cloudflare_warp
+}
+
+install_cloudflare_warp(){
+
+    bash <(curl -fsSL https://cdn.n101.workers.dev/https://github.com/daycat/hax-shadowsocks-install/blob/main/warp.sh) wgd
     install_snap
 }
 
